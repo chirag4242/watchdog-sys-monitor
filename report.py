@@ -123,7 +123,7 @@ HTML_TEMPLATE = """\
 </head>
 <body>
 
-<h1>🐕 DevOps Watchdog</h1>
+<h1>🐕 Watchdog</h1>
 <p>Generated: {generated_at} | Host: {host} | Log: {log_file}</p>
 
 <div class="card">
