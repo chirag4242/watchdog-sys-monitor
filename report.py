@@ -7,7 +7,6 @@ from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 
-
 #status helper
 
 STATUS_COLOUR = {
@@ -15,6 +14,7 @@ STATUS_COLOUR = {
     "WARNING":  ("#f59e0b", "#fffbeb", "⚠️"),
     "CRITICAL": ("#ef4444", "#fef2f2", "🔴"),
 }
+
 
 def badge(status: str) -> str:
     colour, _, icon = STATUS_COLOUR.get(status, ("#6b7280", "#f9fafb", "❓"))
@@ -25,6 +25,7 @@ def badge(status: str) -> str:
         f'{icon} {status}</span>'
     )
 
+
 def pct_bar(value: float, status: str) -> str:
     colour = STATUS_COLOUR.get(status, ("#6b7280",))[0]
     capped = min(float(value), 100)
@@ -33,6 +34,7 @@ def pct_bar(value: float, status: str) -> str:
         f'<div style="background:{colour};width:{capped}%;height:100%;border-radius:6px"></div>'
         f'</div>'
     )
+
 
 def load_records(log_path: str) -> list[dict]:
     records = []
@@ -45,6 +47,7 @@ def load_records(log_path: str) -> list[dict]:
                 except json.JSONDecodeError:
                     continue
     return records
+
 
 
 def compute_summary(records: list[dict]) -> dict:
@@ -196,7 +199,7 @@ ROW_TEMPLATE = """\
         <td>{disk_badge}</td>
       </tr>"""
  
-# ── Build & write report ───────────────────────────────────────────────────────
+# Build & write report 
 def generate_report(log_path: str, output_path: str) -> None:
     records = load_records(log_path)
     if not records:
