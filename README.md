@@ -1,4 +1,4 @@
-# 🐕 DevOps Watchdog — System Health Monitor
+# 🐕 Watchdog — System Health Monitor
  
 [![CI](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
@@ -27,7 +27,7 @@ A lightweight, containerised system health monitor that tracks **CPU, Memory & D
 ## 🗂️ Project Structure
  
 ```
-devops-watchdog/
+watchdog-sys-monitor/
 ├── monitor.sh              # Bash orchestrator — collect → alert → log → report
 ├── report.py               # Python HTML report generator
 ├── alerts.conf             # Threshold & interval configuration
