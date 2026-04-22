@@ -1,6 +1,6 @@
 # 🐕 DevOps Watchdog — System Health Monitor
  
-[![CI](https://github.com/yourusername/devops-watchdog/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/devops-watchdog/actions/workflows/ci.yml)
+[![CI](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Alpine-2496ED?logo=docker&logoColor=white)
@@ -47,8 +47,8 @@ devops-watchdog/
 ### Option A — Docker Compose (recommended)
  
 ```bash
-git clone https://github.com/yourusername/devops-watchdog.git
-cd devops-watchdog
+git clone https://github.com/chirag4242/watchdog-sys-monitor.git
+cd watchdog-sys-monitor
  
 docker compose up --build
 ```
@@ -58,8 +58,8 @@ Logs appear in `./logs/` and the HTML report in `./reports/report.html`.
 ### Option B — Run directly on Linux
  
 ```bash
-git clone https://github.com/yourusername/devops-watchdog.git
-cd devops-watchdog
+git clone https://github.com/chirag4242/watchdog-sys-monitor.git
+cd watchdog-sys-monitor
  
 chmod +x monitor.sh
 ./monitor.sh
