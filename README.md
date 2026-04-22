@@ -114,7 +114,12 @@ CHECK_INTERVAL=60         # Seconds between checks
   "host": "docker-desktop"
 }
 ```
+
+---
  
+ ## 📸 Dashboard Preview
+![Watchdog Dashboard](assets/dashboard.png)
+
 ---
  
 ## 🛠️ Tech Stack
