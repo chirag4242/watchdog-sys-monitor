@@ -47,8 +47,8 @@ devops-watchdog/
 ### Option A — Docker Compose (recommended)
  
 ```bash
-git clone https://github.com/yourusername/devops-watchdog.git
-cd devops-watchdog
+git clone https://github.com/chirag4242/watchdog-sys-monitor.git
+cd watchdog-sys-monitor
  
 docker compose up --build
 ```
@@ -59,7 +59,7 @@ Logs appear in `./logs/` and the HTML report in `./reports/report.html`.
  
 ```bash
 git clone https://github.com/chirag4242/watchdog-sys-monitor.git
-cd devops-watchdog
+cd watchdog-sys-monitor
  
 chmod +x monitor.sh
 ./monitor.sh
