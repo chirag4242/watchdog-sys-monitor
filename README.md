@@ -1,6 +1,6 @@
 # 🐕 DevOps Watchdog — System Health Monitor
  
-[![CI](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml)]
+![CI](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/chirag4242/watchdog-sys-monitor/actions/workflows/ci.yml)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Alpine-2496ED?logo=docker&logoColor=white)
