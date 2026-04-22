@@ -1,0 +1,24 @@
+services:
+  watchdog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devops-watchdog
+    restart: unless-stopped
+ 
+    # Mount output directories so logs & reports persist on the host
+    volumes:
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+ 
+    # Override thresholds or interval without rebuilding the image
+    environment:
+      - CHECK_INTERVAL=${CHECK_INTERVAL:-60}
+ 
+    # Resource limits — watchdog is deliberately lightweight
+    deploy:
+      resources:
+        limits:
+          cpus: "0.10"
+          memory: 64M
+ 

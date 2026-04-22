@@ -19,12 +19,10 @@ RUN chmod +x monitor.sh
 # Create output directories (will be overridden by bind mounts at runtime)
 RUN mkdir -p logs reports
  
-# Smoke-test: validate the Python report script loads cleanly
-RUN python3 -c "import report" 2>/dev/null || python3 -c "
-import ast, sys
-with open('report.py') as f:
-    ast.parse(f.read())
-print('report.py syntax OK')
-"
+RUN python3 -c "import report" 2>/dev/null || \
+    python3 -c "import ast, sys; \
+f=open('report.py'); \
+ast.parse(f.read()); \
+print('report.py syntax OK')"
  
 CMD ["./monitor.sh"]
